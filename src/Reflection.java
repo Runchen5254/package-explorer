@@ -1,24 +1,44 @@
 import java.lang.reflect.*;
+import java.security.Provider;
 
 public class Reflection {
-    public static void main(String[] args) {
-        if (args.length != 1) {
-            System.out.println("Usage: java Reflection <name of class>");
-            //System.exit(-1);
-        }
+
+    public void reflection(String name) {
+
         try {
-            Class meta = Class.forName(args[0]);
+            Class meta = Class.forName(name);
 
             Field[] fields = meta.getDeclaredFields();
-            System.out.println("Found " + fields.length +
-                    " fields in the class " + meta.getSimpleName() );
-            for (Field f : fields) {
-                System.out.println("Field: " + f.getName());
-                System.out.println("Type: " + f.getType().getSimpleName());
-                }
-            } catch (Exception e) {
-                e.printStackTrace();
-            }
+            Method[] methods = meta.getDeclaredMethods();
 
+            System.out.println("Class Details: ");
+            System.out.println("Name: " + meta.getSimpleName());
+            System.out.println("Superclass: " + loadSuperClassName(meta));
+            System.out.println("Interface: " + meta.getInterfaces());
+
+            System.out.println("Field:");
+            for (Field f : fields)
+                System.out.println("  "+ f.getName()+ "|Type: " + f.getType().getSimpleName());
+
+            System.out.println("Methods:");
+            for (Method m : methods)
+                System.out.println("  " + m.getName() + " | " + "Type: " + m.getReturnType().getSimpleName());
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
         }
+    }
+
+    private String loadSuperClassName(Class c) {
+        String result = null;
+        try {
+            result = c.getSuperclass().getSimpleName();
+        }
+        catch (NullPointerException e){
+            // error
+        }
+
+        return result;
+    }
 }
