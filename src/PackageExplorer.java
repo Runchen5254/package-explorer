@@ -2,6 +2,7 @@ import java.io.IOException;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Scanner;
+import java.beans.*;
 
 public class PackageExplorer {
 
@@ -36,6 +37,21 @@ public class PackageExplorer {
         return hashMap;
     }
 
+    //Save all classes to .xml
+    public static void toXML(File[] classes, File dir){
+        try{
+            FileOutputStream output = new FileOutputStream(dir + File.separator + dir.getName() + ".xml");
+            final XMLEncoder encode = new XMLEncoder(new BufferedOutputStream(output));
+
+            encode.writeObject(classes);
+            encode.close();
+
+        } catch(Exception e){
+            System.out.println(e);
+        }
+    }
+
+
     public static void main(String[] args) throws IOException {
 
         //Record dir path
@@ -59,7 +75,7 @@ public class PackageExplorer {
         boolean flag = true;
         do {
             menu.printMainMenu();
-            System.out.print("\n-Enter your choice (1-4) or q to quit: ");
+            System.out.print("\n-Enter your choice (1-3) or q to quit: ");
 
             switch (menu.getUserInput()) {
                 case "1": {
@@ -78,6 +94,10 @@ public class PackageExplorer {
                     r.reflection(temp.getName().replace(".class", ""));
                 }
                 break;
+
+                case "3":{
+                    toXML(classesArr, dir);
+                }break;
 
                 case "m":{
                     menu.printMainMenu();
