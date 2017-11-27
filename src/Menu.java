@@ -3,10 +3,10 @@ import java.util.Scanner;
 public class Menu {
 
     public Menu() {
+        System.out.print("\n-Welcome to PackageExplorer\n");
     }
 
     public void printMainMenu() {
-        System.out.print("\n-Welcome to PackageExplorer\n");
         System.out.print("--------------------------------------\n");
         System.out.print("  1. List all classes\n");
         System.out.print("  2. View a class\n");
@@ -14,7 +14,7 @@ public class Menu {
     }
 
     public void printOpt1() {
-        System.out.print("-List of classes: \n");
+        System.out.print("\n==List of classes== \n");
     }
 
     public String getUserInput(){

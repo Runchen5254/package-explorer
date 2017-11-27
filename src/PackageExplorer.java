@@ -19,15 +19,16 @@ public class PackageExplorer {
     public static HashMap loadData(File[] classesArr){
 
         HashMap<String, ClassData> hashMap = new HashMap();
-        int i = 1;
+        int cnt = 1;
         try {
             for ( File entry : classesArr ) {
                 Class c = Class.forName(entry.getName().replace(".class", ""));
-                ClassData cd = new ClassData();
+                ClassData classData = new ClassData();
 
-                cd.setName(c.getSimpleName());
-                hashMap.put(Integer.toString(i), cd);
-                i++;
+                classData.setName(c.getSimpleName());
+                classData.setSuperClass(c.getSuperclass().getSimpleName());
+                hashMap.put(Integer.toString(cnt), classData);
+                cnt++;
             }
         }catch(Exception e){
             System.out.println(e);
@@ -53,16 +54,16 @@ public class PackageExplorer {
         HashMap<String, ClassData> hashMap = loadData(classesArr);
 
         //Create menu
-        Menu m1 = new Menu();
+        Menu menu = new Menu();
 
         boolean flag = true;
         do {
-            m1.printMainMenu();
+            menu.printMainMenu();
             System.out.print("\n-Enter your choice (1-4) or q to quit: ");
 
-            switch (m1.getUserInput()) {
+            switch (menu.getUserInput()) {
                 case "1": {
-                    m1.printOpt1();
+                    menu.printOpt1();
                     fl.loadPackage(dir.toString());
                 }
                 break;
@@ -74,13 +75,12 @@ public class PackageExplorer {
                     File temp = classesArr[Integer.valueOf(num)-1];
 
                     Reflection r = new Reflection();
-                    //r.reflection(hashMap.get(Integer.valueOf(num)));
                     r.reflection(temp.getName().replace(".class", ""));
                 }
                 break;
 
                 case "m":{
-                    m1.printMainMenu();
+                    menu.printMainMenu();
                 }break;
 
                 case "q":{

@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4c7707da-fe7a-46e5-9273-f8e8ac1194a5" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/package-explorer/PackageExplorer.class" afterPath="$PROJECT_DIR$/out/test/package-explorer/PackageExplorer.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/test/package-explorer/Reflection.class" afterPath="$PROJECT_DIR$/out/test/package-explorer/Reflection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ClassData.java" afterPath="$PROJECT_DIR$/src/ClassData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/FileLoader.java" afterPath="$PROJECT_DIR$/src/FileLoader.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Menu.java" afterPath="$PROJECT_DIR$/src/Menu.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/PackageExplorer.java" afterPath="$PROJECT_DIR$/src/PackageExplorer.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Reflection.java" afterPath="$PROJECT_DIR$/src/Reflection.java" />
@@ -19,11 +19,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="PackageExplorer.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PackageExplorer.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PackageExplorer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="77" column="71" lean-forward="true" selection-start-line="77" selection-start-column="71" selection-end-line="77" selection-end-column="71" />
+            <state relative-caret-position="1780">
+              <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -32,11 +32,13 @@
       <file leaf-file-name="Menu.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Menu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="391">
-              <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
+            <state relative-caret-position="289">
+              <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
               <folding>
+                <element signature="e#66#67#0" expanded="true" />
+                <element signature="e#133#134#0" expanded="true" />
                 <element signature="e#430#431#0" expanded="true" />
-                <element signature="e#486#487#0" expanded="true" />
+                <element signature="e#490#491#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -54,14 +56,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Reflection.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Reflection.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Reflection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="594">
+              <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -99,9 +99,9 @@
         <option value="$PROJECT_DIR$/src/Driver.java" />
         <option value="$PROJECT_DIR$/src/FileLoader.java" />
         <option value="$PROJECT_DIR$/src/ClassData.java" />
-        <option value="$PROJECT_DIR$/src/Reflection.java" />
-        <option value="$PROJECT_DIR$/src/Menu.java" />
         <option value="$PROJECT_DIR$/src/PackageExplorer.java" />
+        <option value="$PROJECT_DIR$/src/Menu.java" />
+        <option value="$PROJECT_DIR$/src/Reflection.java" />
       </list>
     </option>
   </component>
@@ -300,16 +300,15 @@
       <option name="presentableId" value="Default" />
       <updated>1510810527142</updated>
       <workItem from="1510810529924" duration="581000" />
-      <workItem from="1511731339827" duration="25991000" />
+      <workItem from="1511731339827" duration="27551000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="26572000" />
+    <option name="totallyTimeSpent" value="28132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1115" y="0" width="1452" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -320,8 +319,8 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2195946" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3828829" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43243244" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3018018" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16666667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -377,22 +376,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/PackageExplorer.java</url>
-          <line>8</line>
-          <properties class="PackageExplorer" method="loadClasses">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/PackageExplorer.java</url>
-          <line>50</line>
-          <properties />
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="30" />
     </breakpoint-manager>
     <watches-manager />
@@ -424,21 +407,32 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Reflection.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ClassData.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
           <caret line="25" column="24" lean-forward="false" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PackageExplorer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1780">
+          <caret line="92" column="41" lean-forward="true" selection-start-line="92" selection-start-column="41" selection-end-line="92" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Menu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="5" lean-forward="true" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="5" />
+          <folding>
+            <element signature="e#66#67#0" expanded="true" />
+            <element signature="e#133#134#0" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#490#491#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -452,21 +446,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Menu.java">
+    <entry file="file://$PROJECT_DIR$/src/Reflection.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" column="21" lean-forward="true" selection-start-line="23" selection-start-column="21" selection-end-line="23" selection-end-column="21" />
-          <folding>
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#486#487#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PackageExplorer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="77" column="71" lean-forward="true" selection-start-line="77" selection-start-column="71" selection-end-line="77" selection-end-column="71" />
+        <state relative-caret-position="594">
+          <caret line="42" column="5" lean-forward="true" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
           <folding />
         </state>
       </provider>
