@@ -3,24 +3,26 @@ import java.io.FilenameFilter;
 import java.io.IOException;
 
 public class FileLoader {
+
     public void loadPackage(String path) throws IOException {
+
         System.out.println("Gathering class files in " + path);
+
         FilenameFilter classFilter = new FilenameFilter() {
             public boolean accept(File dir, String name) {
-                return name.toLowerCase().endsWith(".class");
+                if(name.indexOf('$')== -1)  // Check if there is a '$' in name.
+                    return name.toLowerCase().endsWith(".class");
+                else
+                    return false;
             }
         };
+
         File f = new File(path); // the directory, really!
-        for (File file : f.listFiles(classFilter) ) {
-            System.out.println(file.getName().replace(".class", ""));
-        }
-    }
-    public static void main(String[] args) throws IOException {
-        FileLoader fl = new FileLoader();
-        if (args.length != 1) {
-            System.out.println("Usage FileLoader <path>");
-        } else {
-            fl.loadPackage(args[0]);
+
+        int counter = 0;
+        for (File file : f.listFiles(classFilter)) {
+            counter++;
+            System.out.print( counter + ". " + file.getName().replace(".class", "") + "\n");
         }
     }
 }
